@@ -62,110 +62,93 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
     # ----- creer la figure et l'affichage MATPLOTLIB -----#
     Write.Print("<🟢> <🟢> <🟢> <🟢> NOUVELLE FIGURE ! <🟢> <🟢> <🟢> <🟢>", Colors.green, interval=0.000)
     print('')
-    try:
-        highs = df.iloc[local_max, :]
-        lows = df.iloc[local_min, :]
-        fig = plt.figure(figsize=(10, 7))
-        if pourcent_chercher2 >= 1:
-            fig.patch.set_facecolor('#17DE17')
-            fig.patch.set_alpha(0.3)
-        if pourcent_chercher2 >= 3:
-            fig.patch.set_facecolor('#3498DB')
-            fig.patch.set_alpha(0.3)
-        if pourcent_chercher2 >= 5:
-            fig.patch.set_facecolor('#6c00d3')
-            fig.patch.set_alpha(0.3)
-        if pourcent_chercher2 >= 10:
-            fig.patch.set_facecolor('#ffdc00')
-            fig.patch.set_alpha(0.3)
-        if ((((((G + ((moyenne_tete) * 12 / 100)) - G)) * 100) / G) * 1000) / 100 >= 5:
-            dejatoucher3 = 'OUI'
-        plt.plot([], [], ' ')
-        plt.title(
-            f'IETE : {tiker_live} | {time1} {time_name1} | +{pourcent_chercher}% BRUT | +{pourcent_chercher2}% NET | -{pourcent_perdu}% NET | {note}/10 | {debugage} | {dejatoucher3}',
-            fontweight="bold", color='black')
-        mirande3['c'].plot(color=['blue'], label='Clotures')
-        # df['sma_20'].plot(label='Ema 20', linestyle='-', linewidth=1.2, color='green')
-        # df['sma_50'].plot(label='Ema 50', linestyle='-', linewidth=1.2, color='red')
-        # df['sma_100'].plot(label='Ema 100', linestyle='-', linewidth=1.2, color='blue')
-        # mirande['c'].plot(color=['#FF0000'])
-        mirande2['c'].plot(color=['green'], linestyle='--', label='Ligne de coup')
-        plt.axhline(y=J[1] + moyenne_tete, linestyle='--', alpha=0.3, color='red',
-                    label='100% objectif')
-        plt.axhline(y=J[1] + (((moyenne_tete) / 2) + ((moyenne_tete) / 4)), linestyle='--',
-                    alpha=0.3, color='black', label='75% objectif')
-        plt.axhline(y=G + ((moyenne_tete) * 12 / 100), linestyle='--', alpha=0.3, color='orange',
-                    label='12% objectif depuis G')
-        plt.axhline(y=J[1] + (moyenne_tete) / 4, linestyle='--', alpha=0.3, color='black',
-                    label='25% objectif')
-        plt.axhline(y=moins50p, linestyle='--', alpha=0.3, color='purple', label='-250% objectif depuis G')
-        plt.grid(True, which='major', color='#666666', linestyle='-', alpha=0.1)
-        taille_diviser = (local_max[-1] - local_max[-2]) / (local_min[-2] - local_max[-2])
-        # point_max = J[0]+((J[0] - I[0])/taille_diviser)
-        point_max = J[0] + ((J[0] - I[0]))
-        point_max = int(round(point_max, 0))
-        # plt.scatter(point_max, df['c'].values[int(round(point_max, 0))], color='red',label='Max temps realisation')
-        plt.legend()
-        plt.text(local_max[-3], A, "A", ha='left', style='normal', size=10.5, color='red',
-                 wrap=True)
-        plt.text(J[0], G + ((moyenne_tete) * 12 / 100), f"{round(G + ((moyenne_tete) * 12 / 100), 5)}",
-                 ha='left', style='normal', size=10.5, color='red', wrap=True)
-        plt.text(J[0], moins50p, f"{round(moins50p, 5)}", ha='left', style='normal', size=10.5,
-                 color='red', wrap=True)
-        plt.text(local_min[-3], B, "B", ha='left', style='normal', size=10.5, color='red',
-                 wrap=True)
-        plt.text(local_max[-2], C, "C", ha='left', style='normal', size=10.5, color='red',
-                 wrap=True)
-        plt.text(local_min[-2], D, f"D {round(D, 5)}", ha='left', style='normal', size=10.5,
-                 color='red', wrap=True)
-        plt.text(local_max[-1], E, "E", ha='left', style='normal', size=10.5, color='red',
-                 wrap=True)
-        plt.text(local_min[-1], F, f"F  {round(F, 5)}", ha='left', style='normal', size=10.5,
-                 color='red', wrap=True)
-        plt.text(place_liveprice, G, f"G  {round(G, 5)}", ha='left', style='normal', size=10.5,
-                 color='red', wrap=True)
-        plt.text(I[0], I[1], "I", ha='left', style='normal', size=10.5, color='#00FF36', wrap=True)
-        plt.text(J[0], J[1], "J", ha='left', style='normal', size=10.5, color='#00FF36', wrap=True)
-        plt.text(local_max[-4] +2,  G + ((moyenne_tete) * 50 / 100), f"{round(G + ((moyenne_tete) * 50 / 100), 3)}", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec=(1., 0.5, 0.5), fc=(1., 0.8, 0.8), ))
-        plt.text(local_max[-4] +2,  G - ((moyenne_tete) * 25 / 100), f"{round(G - ((moyenne_tete) * 25 / 100),3)}", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec=(1., 0.5, 0.5), fc=(1., 0.8, 0.8), ))
-        plt.text(local_max[-4] - 1, G + ((moyenne_tete) * 50 / 100), f"{round(J[1] + ((moyenne_tete) * 50 / 100), 3)} pas depuis G", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec="blue", fc="lightblue"))
-        plt.text(local_max[-4] - 1, G - ((moyenne_tete) * 25 / 100), f"{round(J[1] - ((moyenne_tete) * 25 / 100), 3)} pas depuis G", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec="blue", fc="lightblue"))
-
-        # test_valeur = df['c'].iloc[round(J[0]) + 1]
-        # plt.text(round(J[0]), df['c'].iloc[round(J[0])], f"J+1 {test_valeur}", ha='left',style='normal', size=10.5, color='#00FF36', wrap=True)
-        plt.scatter(len(df['c']) - 1, df['c'].values[-1], color='blue', label='liveprice')
-        plt.scatter(len(df['c']) - 2, df['c'].values[-2], color='orange', label='cloture')
-        plt.scatter(local_max[-3], A, color='blue')
-        plt.scatter(local_min[-3], B, color='blue')
-        plt.scatter(local_max[-2], C, color='blue')
-        plt.scatter(local_min[-2], D, color='blue')
-        plt.scatter(local_max[-1], E, color='blue')
-        plt.scatter(local_min[-1], F, color='blue')
-        #plt.scatter(x=highs.index, y=highs['c'], alpha=0.5)
-        #plt.scatter(x=lows.index, y=lows['c'], alpha=0.5)
-        argument2 = round((J[1] + (moyenne_tete) / 2), 5)
-        argument3 = round(moins50p, 5)
-        # Paramètres des boutons
-        button_width = 0.2
-        button_height = 0.075
-        button_space = 0.05
-        # Création du bouton pour enregistrer la figure
-        button_ax1 = plt.axes([0.125, 0.001, button_width, button_height], facecolor='none')
-        button1 = plt.Button(button_ax1, 'Enregistrer', color='white', hovercolor='lightgray')
-        button1.on_clicked(save_figure)
-        # Création du bouton pour acheter
-        button_ax2 = plt.axes([0.9 - button_width, 0.001, button_width, button_height], facecolor='none')
-        button2 = plt.Button(button_ax2, 'Acheter', color='white', hovercolor='lightgray')
-        button2.on_clicked(purchase)
-        plt.show()
-
-    # ----- creer la figure et l'affichage MATPLOTLIB -----#
-    except:
-        remplacement('%log%',
-                     f'{datetime.datetime.now()} PROBLEME D\'AFFICHAGE MATPLOTLIB SUR: {ticker} {time1} {time_name1}\n%log%',
-                     'Log.txt', f'Log.txt')
-        Write.Print("<⛔> <⛔> <⛔> <⛔> ERREUR CRITIQUE <⛔> <⛔> <⛔> <⛔>", Colors.red, interval=0.000)
-        print('')
+    highs = df.iloc[local_max, :]
+    lows = df.iloc[local_min, :]
+    fig = plt.figure(figsize=(10, 7))
+    if pourcent_chercher2 >= 1:
+        fig.patch.set_facecolor('#17DE17')
+        fig.patch.set_alpha(0.3)
+    if pourcent_chercher2 >= 3:
+        fig.patch.set_facecolor('#3498DB')
+        fig.patch.set_alpha(0.3)
+    if pourcent_chercher2 >= 5:
+        fig.patch.set_facecolor('#6c00d3')
+        fig.patch.set_alpha(0.3)
+    if pourcent_chercher2 >= 10:
+        fig.patch.set_facecolor('#ffdc00')
+        fig.patch.set_alpha(0.3)
+    if ((((((G + ((moyenne_tete) * 12 / 100)) - G)) * 100) / G) * 1000) / 100 >= 5:
+        dejatoucher3 = 'OUI'
+    plt.plot([], [], ' ')
+    plt.title(
+        f'IETE : {tiker_live} | {time1} {time_name1} | +{pourcent_chercher}% BRUT | +{pourcent_chercher2}% NET | -{pourcent_perdu}% NET | {note}/10 | {debugage} | {dejatoucher3}',
+        fontweight="bold", color='black')
+    mirande3['c'].plot(color=['blue'], label='Clotures')
+    # df['sma_20'].plot(label='Ema 20', linestyle='-', linewidth=1.2, color='green')
+    # df['sma_50'].plot(label='Ema 50', linestyle='-', linewidth=1.2, color='red')
+    # df['sma_100'].plot(label='Ema 100', linestyle='-', linewidth=1.2, color='blue')
+    # mirande['c'].plot(color=['#FF0000'])
+    mirande2['c'].plot(color=['green'], linestyle='--', label='Ligne de coup')
+    plt.axhline(y=J[1] + moyenne_tete, linestyle='--', alpha=0.3, color='red',
+                label='100% objectif')
+    plt.axhline(y=J[1] + (((moyenne_tete) / 2) + ((moyenne_tete) / 4)), linestyle='--',
+                alpha=0.3, color='black', label='75% objectif')
+    plt.axhline(y=G + ((moyenne_tete) * 12 / 100), linestyle='--', alpha=0.3, color='orange',
+                label='12% objectif depuis G')
+    plt.axhline(y=J[1] + (moyenne_tete) / 4, linestyle='--', alpha=0.3, color='black',
+                label='25% objectif')
+    plt.axhline(y=moins50p, linestyle='--', alpha=0.3, color='purple', label='-250% objectif depuis G')
+    plt.grid(True, which='major', color='#666666', linestyle='-', alpha=0.1)
+    taille_diviser = (local_max[-1] - local_max[-2]) / (local_min[-2] - local_max[-2])
+    # point_max = J[0]+((J[0] - I[0])/taille_diviser)
+    point_max = J[0] + ((J[0] - I[0]))
+    point_max = int(round(point_max, 0))
+    # plt.scatter(point_max, df['c'].values[int(round(point_max, 0))], color='red',label='Max temps realisation')
+    plt.legend()
+    plt.text(local_max[-3], A, "A", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(J[0], G + ((moyenne_tete) * 12 / 100), f"{round(G + ((moyenne_tete) * 12 / 100), 5)}",
+             ha='left', style='normal', size=10.5, color='red', wrap=True)
+    plt.text(J[0], moins50p, f"{round(moins50p, 5)}", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.text(local_min[-3], B, "B", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_max[-2], C, "C", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_min[-2], D, f"D {round(D, 5)}", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.text(local_max[-1], E, "E", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_min[-1], F, f"F  {round(F, 5)}", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.text(place_liveprice, G, f"G  {round(G, 5)}", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.text(I[0], I[1], "I", ha='left', style='normal', size=10.5, color='#00FF36', wrap=True)
+    plt.text(J[0], J[1], "J", ha='left', style='normal', size=10.5, color='#00FF36', wrap=True)
+    plt.text(local_max[-4] +2,  G + ((moyenne_tete) * 50 / 100), f"{round(G + ((moyenne_tete) * 50 / 100), 3)}", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec=(1., 0.5, 0.5), fc=(1., 0.8, 0.8), ))
+    plt.text(local_max[-4] +2,  G - ((moyenne_tete) * 25 / 100), f"{round(G - ((moyenne_tete) * 25 / 100),3)}", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec=(1., 0.5, 0.5), fc=(1., 0.8, 0.8), ))
+    plt.text(local_max[-4] - 1, G + ((moyenne_tete) * 50 / 100), f"{round(J[1] + ((moyenne_tete) * 50 / 100), 3)} pas depuis G", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec="blue", fc="lightblue"))
+    plt.text(local_max[-4] - 1, G - ((moyenne_tete) * 25 / 100), f"{round(J[1] - ((moyenne_tete) * 25 / 100), 3)} pas depuis G", size=10.5, ha="center", va="center", bbox=dict(boxstyle="round", ec="blue", fc="lightblue"))
+    # test_valeur = df['c'].iloc[round(J[0]) + 1]
+    # plt.text(round(J[0]), df['c'].iloc[round(J[0])], f"J+1 {test_valeur}", ha='left',style='normal', size=10.5, color='#00FF36', wrap=True)
+    plt.scatter(len(df['c']) - 1, df['c'].values[-1], color='blue', label='liveprice')
+    plt.scatter(len(df['c']) - 2, df['c'].values[-2], color='orange', label='cloture')
+    plt.scatter(local_max[-3], A, color='blue')
+    plt.scatter(local_min[-3], B, color='blue')
+    plt.scatter(local_max[-2], C, color='blue')
+    plt.scatter(local_min[-2], D, color='blue')
+    plt.scatter(local_max[-1], E, color='blue')
+    plt.scatter(local_min[-1], F, color='blue')
+    #plt.scatter(x=highs.index, y=highs['c'], alpha=0.5)
+    #plt.scatter(x=lows.index, y=lows['c'], alpha=0.5)
+    argument2 = round((J[1] + (moyenne_tete) / 2), 5)
+    argument3 = round(moins50p, 5)
+    # Paramètres des boutons
+    button_width = 0.2
+    button_height = 0.075
+    button_space = 0.05
+    # Création du bouton pour enregistrer la figure
+    plt.show()
 
 
 # ----- fonction pour trouver les point intersection de la ligne de coup et de la Courbe -----#

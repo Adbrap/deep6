@@ -120,8 +120,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/KALL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KALU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KALV1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/KALV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KAMN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KAPR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KAR1.py &
@@ -131,6 +129,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/KB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KBA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KBAL1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/KBE1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/KBE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KBH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KBND1.py &
@@ -222,8 +222,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/KNX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KOCG1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/KOCG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KOCT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KOD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KODK1.py &
@@ -243,6 +241,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/KPLT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KPRX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KPTI1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/KR1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/KR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KRBN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/KRBP1.py &
@@ -324,8 +324,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/LASR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LATG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LATGU1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/LATGU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LAUR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LAW1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LAZ1.py &
@@ -355,6 +353,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/LCID1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LCII1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LCNB1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/LCR1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/LCR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LCTD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LCTU1.py &
@@ -426,8 +426,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/LIBYU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LICY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LIDR1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/LIDR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LIFE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LII1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LILA1.py &
@@ -467,6 +465,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/LMST1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LMT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LNC1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/LND1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/LND1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LNG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LNKB1.py &
@@ -528,8 +528,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/LSST1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LSTR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LSXMA1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/LSXMA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LSXMB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LSXMK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LTBR1.py &
@@ -580,6 +578,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/LYG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LYLT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LYRA1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/LYRA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LYT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LYTS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/LYV1.py &
@@ -629,8 +629,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MBCC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MBCN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MBI1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/MBIN1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/MBIN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MBINN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MBINO1.py &
@@ -692,6 +690,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MDIA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MDIV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MDJH1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/MDJH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MDLZ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MDNA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MDRR1.py &
@@ -731,8 +731,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MET1.py &
   python3 /home/ubuntu/Desktop/groslogis6/META1.py &
   python3 /home/ubuntu/Desktop/groslogis6/METC1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/METCL1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/METCL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/METV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/METX1.py &
@@ -804,6 +802,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MINO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MINT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MINV1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/MINV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MIO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MIR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MIRM1.py &
@@ -833,8 +833,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MLKN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MLM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MLN1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/MLNK1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/MLNK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MLP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MLPA1.py &
@@ -916,6 +914,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MOVE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MOXC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MP1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/MP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MPA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MPAA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MPAY1.py &
@@ -935,8 +935,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MQY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MRAD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MRAI1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/MRAM1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/MRAM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MRBK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MRC1.py &
@@ -1028,6 +1026,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MUE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MUFG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MUI1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/MUI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MUJ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MULN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MUNI1.py &
@@ -1037,8 +1037,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/MUSA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MUSI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MUST1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/MUX1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/MUX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MVBF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/MVF1.py &
@@ -1242,8 +1240,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/NMFC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMI1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/NMI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMIH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NML1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMM1.py &
@@ -1253,6 +1249,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/NMS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMTC1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/NMTR1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/NMTR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NMZ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NN1.py &
@@ -1344,8 +1342,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/NTKI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NTLA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NTNX1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/NTNX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NTR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NTRA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NTRB1.py &
@@ -1365,6 +1361,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/NUBIU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NUDM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NUDV1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/NUE1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/NUE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NUEM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NUGO1.py &
@@ -1446,8 +1444,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/NXTC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NXTG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NXTP1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/NXTP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NYC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NYCB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/NYF1.py &
@@ -1477,6 +1473,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/OC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OCAX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OCAXU1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/OCC1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/OCC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OCCI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OCCIN1.py &
@@ -1548,8 +1546,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/OMCL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OMER1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OMEX1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/OMEX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OMF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OMFL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OMFS1.py &
@@ -1589,6 +1585,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/OPA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OPAD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OPBK1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/OPCH1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/OPCH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OPEN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OPER1.py &
@@ -1650,8 +1648,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/OTLY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OTMO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OTRK1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/OTRK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OTRKP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OTTR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/OUNZ1.py &
@@ -1702,6 +1698,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PACK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PACW1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PACWP1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/PACWP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PAG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PAGP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PAGS1.py &
@@ -1751,8 +1749,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PBFS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PBH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PBHC1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/PBI1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/PBI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PBJ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PBLA1.py &
@@ -1814,6 +1810,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PEB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PEBK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PEBO1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/PEBO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PECO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PED1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PEG1.py &
@@ -1853,8 +1851,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PFFL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PFFR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PFFV1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/PFG1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/PFG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PFGC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PFH1.py &
@@ -1926,6 +1922,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PHYT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PIAI1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/PIAI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PICB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PICK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PID1.py &
@@ -1955,8 +1953,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PKB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PKBK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PKE1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/PKG1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/PKG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PKI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PKOH1.py &
@@ -2038,6 +2034,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PODD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/POET1.py &
   python3 /home/ubuntu/Desktop/groslogis6/POLA1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/POLA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/POOL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/POR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PORT1.py &
@@ -2057,8 +2055,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PPHPR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PPHPU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PPI1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/PPIH1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/PPIH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PPL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PPLT1.py &
@@ -2150,6 +2146,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PSHG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSIL1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/PSIL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSJ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSL1.py &
@@ -2159,8 +2157,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/PSMD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSMG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSMJ1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/PSMM1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/PSMM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSMO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/PSMR1.py &
@@ -2364,8 +2360,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/QVCD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/QVML1.py &
   python3 /home/ubuntu/Desktop/groslogis6/QVMM1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/QVMM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/QVMS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/QWLD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/QYLD1.py &
@@ -2375,6 +2369,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/RAAS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RAAX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RACE1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/RACY1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/RACY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RACYU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RAD1.py &
@@ -2466,8 +2462,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/REMX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RENE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RENEU1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/RENEU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RENN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RENT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RENW1.py &
@@ -2487,6 +2481,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/REVEU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/REVG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/REVS1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/REW1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/REW1.py &
   python3 /home/ubuntu/Desktop/groslogis6/REX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/REXR1.py &
@@ -2568,8 +2564,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/RLGT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RLI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RLJ1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/RLJ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RLMD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RLTY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RLX1.py &
@@ -2599,6 +2593,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/RNEM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RNG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RNGR1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/RNLC1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/RNLC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RNLX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RNMC1.py &
@@ -2670,8 +2666,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/RSEE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RSF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RSG1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/RSG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RSI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RSKD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RSLS1.py &
@@ -2711,6 +2705,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/RWLK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RWM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RWO1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/RWOD1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/RWOD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RWODU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/RWR1.py &
@@ -2772,8 +2768,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SANA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SAND1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SANG1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/SANG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SANM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SANW1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SAP1.py &
@@ -2824,6 +2818,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SCCO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SCD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SCDL1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/SCDL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SCHA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SCHB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SCHC1.py &
@@ -2873,8 +2869,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SDAC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SDACU1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/SDC1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/SDC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SDCI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SDD1.py &
@@ -2936,6 +2930,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SFIG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SFIX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SFL1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/SFL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SFM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SFNC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SFST1.py &
@@ -2975,8 +2971,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SHAP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SHBI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SHC1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/SHCR1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/SHCR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SHE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SHEL1.py &
@@ -3048,6 +3042,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SJB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SJM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SJNK1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/SJNK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SJR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SJT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SJW1.py &
@@ -3077,8 +3073,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SLB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SLCA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SLDB1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/SLDP1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/SLDP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SLF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SLG1.py &
@@ -3160,6 +3154,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SNCE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNCR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNCRL1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/SNCRL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNCY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SND1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNDA1.py &
@@ -3179,8 +3175,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SNPO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNPS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNPX1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/SNRH1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/SNRH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNRHU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SNSE1.py &
@@ -3272,6 +3266,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SPLV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPMB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPMD1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/SPMD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPMO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPMV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPNS1.py &
@@ -3281,8 +3277,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SPPI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPPP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPR1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/SPRB1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/SPRB1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPRC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SPRE1.py &
@@ -3486,8 +3480,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SWN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SWSS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SWSSU1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/SWSSU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SWTX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SWVL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SWX1.py &
@@ -3497,6 +3489,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/SXQG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SXT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SXTC1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/SXUS1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/SXUS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/SYBT1.py &
@@ -3588,8 +3582,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TCS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TCVA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TCX1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/TCX1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TDC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TDCX1.py &
@@ -3609,6 +3601,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TDV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TDVG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TDW1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/TDY1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/TDY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TEAF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TEAM1.py &
@@ -3690,8 +3684,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TIG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TIGO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TIGR1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/TIGR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TIL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TILE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TILL1.py &
@@ -3721,6 +3713,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TKR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TLGA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TLGY1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/TLGYU1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/TLGYU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TLH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TLIS1.py &
@@ -3792,8 +3786,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TPHS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TPIC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TPIF1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/TPIF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TPL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TPLC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TPLE1.py &
@@ -3833,6 +3825,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TRNS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TRON1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TRONU1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/TROO1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/TROO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TROW1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TROX1.py &
@@ -3894,8 +3888,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/TU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TUG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TUGN1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/TUGN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TUP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TUR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/TURN1.py &
@@ -3946,6 +3938,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/UAL1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UAMY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UAN1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/UAN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UAPR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UAUG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UAV1.py &
@@ -3995,8 +3989,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/UGP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UGRO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UHAL1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/UHS1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/UHS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UHT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UI1.py &
@@ -4058,6 +4050,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/UPW1.py &
   python3 /home/ubuntu/Desktop/groslogis6/UPWK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/URA1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/URA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/URBN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/URE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/URG1.py &
@@ -4097,8 +4091,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/USMC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/USMF1.py &
   python3 /home/ubuntu/Desktop/groslogis6/USML1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/USMV1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/USMV1.py &
   python3 /home/ubuntu/Desktop/groslogis6/USNA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/USNZ1.py &
@@ -4170,6 +4162,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/VBK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VBLT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VBND1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/VBND1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VBNK1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VBOC1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VBOCU1.py &
@@ -4199,8 +4193,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/VDNI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VEA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VECO1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/VECT1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/VECT1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VEDU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VEEE1.py &
@@ -4282,6 +4274,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/VIXM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VIXY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VJET1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/VJET1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VKI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VKQ1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VKTX1.py &
@@ -4301,8 +4295,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/VLY1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VLYPO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VLYPP1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/VMAR1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/VMAR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VMBS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VMC1.py &
@@ -4394,6 +4386,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/VSS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VST1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VSTA1.py &
+ sleep 10
+  python3 /home/ubuntu/Desktop/groslogis6/VSTA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VSTM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VSTO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VT1.py &
@@ -4403,8 +4397,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/VTGN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VTHR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VTI1.py &
-  python3 /home/ubuntu/Desktop/groslogis6/VTIP1.py &
- sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/VTIP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VTN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/VTNR1.py &
@@ -4608,8 +4600,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/WSO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WSR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WST1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/WST1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTAI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTBA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTER1.py &
@@ -4619,6 +4609,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/WTI1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTMA1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/WTMAR1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/WTMAR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTMAU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/WTMF1.py &
@@ -4710,8 +4702,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/XLO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XLP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XLRE1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/XLRE1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XLSR1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XLU1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XLV1.py &
@@ -4731,6 +4721,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/XOMA1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XOMAO1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XOMAP1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/XOP1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/XOP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XOS1.py &
   python3 /home/ubuntu/Desktop/groslogis6/XOUT1.py &
@@ -4812,8 +4804,6 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/YRD1.py &
   python3 /home/ubuntu/Desktop/groslogis6/YSEP1.py &
   python3 /home/ubuntu/Desktop/groslogis6/YSG1.py &
- sleep 10
-  python3 /home/ubuntu/Desktop/groslogis6/YSG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/YTEN1.py &
   python3 /home/ubuntu/Desktop/groslogis6/YTPG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/YTRA1.py &
@@ -4843,6 +4833,8 @@ do
   python3 /home/ubuntu/Desktop/groslogis6/ZH1.py &
   python3 /home/ubuntu/Desktop/groslogis6/ZHDG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/ZI1.py &
+  python3 /home/ubuntu/Desktop/groslogis6/ZIG1.py &
+ sleep 10
   python3 /home/ubuntu/Desktop/groslogis6/ZIG1.py &
   python3 /home/ubuntu/Desktop/groslogis6/ZIM1.py &
   python3 /home/ubuntu/Desktop/groslogis6/ZIMV1.py &
