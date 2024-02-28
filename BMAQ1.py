@@ -143,12 +143,44 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
     #plt.scatter(x=lows.index, y=lows['c'], alpha=0.5)
     argument2 = round((J[1] + (moyenne_tete) / 2), 5)
     argument3 = round(moins50p, 5)
-    # Paramètres des boutons
-    button_width = 0.2
-    button_height = 0.075
-    button_space = 0.05
-    # Création du bouton pour enregistrer la figure
     plt.show()
+
+
+
+def courbe(tiker_live,time1,time_name1,mirande3,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice, nom_place):
+    # ----- creer la figure et l'affichage MATPLOTLIB -----#
+    Write.Print("<🟢> <🟢> <🟢> <🟢> NOUVELLE FIGURE ! <🟢> <🟢> <🟢> <🟢>", Colors.green, interval=0.000)
+    plt.plot([], [], ' ')
+    plt.title(
+        f'IETE : {tiker_live} | {time1} {time_name1} | {nom_place}  |  \PAS PRISE/',
+        fontweight="bold", color='black')
+    mirande3['c'].plot(color=['blue'], label='Clotures')
+    plt.grid(True, which='major', color='#666666', linestyle='-', alpha=0.1)
+    plt.legend()
+    plt.text(local_max[-3], A, "A", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_min[-3], B, "B", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_max[-2], C, "C", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_min[-2], D, f"D", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.text(local_max[-1], E, "E", ha='left', style='normal', size=10.5, color='red',
+             wrap=True)
+    plt.text(local_min[-1], F, f"F", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.text(place_liveprice, G, f"G", ha='left', style='normal', size=10.5,
+             color='red', wrap=True)
+    plt.scatter(len(df['c']) - 1, df['c'].values[-1], color='blue', label='liveprice')
+    plt.scatter(len(df['c']) - 2, df['c'].values[-2], color='orange', label='cloture')
+    plt.scatter(local_max[-3], A, color='blue')
+    plt.scatter(local_min[-3], B, color='blue')
+    plt.scatter(local_max[-2], C, color='blue')
+    plt.scatter(local_min[-2], D, color='blue')
+    plt.scatter(local_max[-1], E, color='blue')
+    plt.scatter(local_min[-1], F, color='blue')
+    plt.show()
+
 
 
 # ----- fonction pour trouver les point intersection de la ligne de coup et de la Courbe -----#
@@ -446,7 +478,8 @@ def Finder_IETE(time1, time_name1, start1):
                         C - D) and B > D and F > D and B < C and F < E and A >= mirande2['c'].iloc[
                     0] and verif == 0 and ordre == True and mini_pourcent == True:
                     # ----- condition pour garantir la forme de l'iete  -----#
-
+                    nom_place = 'etape 1'
+                    courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice)
                     # ----- essaye de determiner les point d'intersection de la LDC -----#
                     try:
                         J = line_intersection((AJ, BJ), (CJ, DJ))
@@ -484,7 +517,8 @@ def Finder_IETE(time1, time_name1, start1):
                     # ----- condition pour filtrer iete  -----#
                     if I[1] > B and J[1] > F and moyenne_epaule1 <= moyenne_tete / 2 and moyenne_epaule2 <= moyenne_tete / 2 and moyenne_epaule1 >= moyenne_tete / 4 and moyenne_epaule2 >= moyenne_tete / 4 and accept == True and df['c'].values[-2] <= J[1] + (moyenne_tete) / 4 and df['c'].values[-2] >= J[1] and df['c'].values[-1] <= J[1] + (moyenne_tete) / 4 and df['c'].values[-1] >= J[1] and G >= 1:
                         # ----- condition pour filtrer iete  -----#
-
+                        nom_place = 'etape 2'
+                        courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice,nom_place)
                         # ----- systeme de notation des iete en fonction de la beaute et de la perfection de realisation  -----#
                         note = 0
                         pourcentage_10_tete = (10 * (local_max[-1] - local_max[-2])) / 100
