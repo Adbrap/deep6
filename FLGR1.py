@@ -478,8 +478,6 @@ def Finder_IETE(time1, time_name1, start1):
                         C - D) and B > D and F > D and B < C and F < E and A >= mirande2['c'].iloc[
                     0] and verif == 0 and ordre == True and mini_pourcent == True:
                     # ----- condition pour garantir la forme de l'iete  -----#
-                    nom_place = 'etape 1'
-                    courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice, nom_place)
                     # ----- essaye de determiner les point d'intersection de la LDC -----#
                     try:
                         J = line_intersection((AJ, BJ), (CJ, DJ))
