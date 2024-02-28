@@ -479,7 +479,7 @@ def Finder_IETE(time1, time_name1, start1):
                     0] and verif == 0 and ordre == True and mini_pourcent == True:
                     # ----- condition pour garantir la forme de l'iete  -----#
                     nom_place = 'etape 1'
-                    courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice)
+                    courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice, nom_place)
                     # ----- essaye de determiner les point d'intersection de la LDC -----#
                     try:
                         J = line_intersection((AJ, BJ), (CJ, DJ))
@@ -518,7 +518,7 @@ def Finder_IETE(time1, time_name1, start1):
                     if I[1] > B and J[1] > F and moyenne_epaule1 <= moyenne_tete / 2 and moyenne_epaule2 <= moyenne_tete / 2 and moyenne_epaule1 >= moyenne_tete / 4 and moyenne_epaule2 >= moyenne_tete / 4 and accept == True and df['c'].values[-2] <= J[1] + (moyenne_tete) / 4 and df['c'].values[-2] >= J[1] and df['c'].values[-1] <= J[1] + (moyenne_tete) / 4 and df['c'].values[-1] >= J[1] and G >= 1:
                         # ----- condition pour filtrer iete  -----#
                         nom_place = 'etape 2'
-                        courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice,nom_place)
+                        courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice, nom_place)
                         # ----- systeme de notation des iete en fonction de la beaute et de la perfection de realisation  -----#
                         note = 0
                         pourcentage_10_tete = (10 * (local_max[-1] - local_max[-2])) / 100
