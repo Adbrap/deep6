@@ -147,7 +147,7 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
 
 
 
-def courbe(tiker_live,time1,time_name1,mirande3,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice, nom_place):
+def courbe(tiker_live,time1,time_name1,mirande3,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice, nom_place, moyenne_tete):
     # ----- creer la figure et l'affichage MATPLOTLIB -----#
     Write.Print("<🟢> <🟢> <🟢> <🟢> NOUVELLE FIGURE ! <🟢> <🟢> <🟢> <🟢>", Colors.green, interval=0.000)
     plt.plot([], [], ' ')
@@ -171,6 +171,11 @@ def courbe(tiker_live,time1,time_name1,mirande3,local_min,local_max,A,B,C,D,E,F,
              color='red', wrap=True)
     plt.text(place_liveprice, G, f"G", ha='left', style='normal', size=10.5,
              color='red', wrap=True)
+
+    plt.axhline(y=J[1] + (moyenne_tete) / 4, linestyle='--', alpha=0.3, color='green', label='-25% objectif')
+    plt.axhline(y=J[1] - (moyenne_tete) / 4, linestyle='--', alpha=0.3, color='red', label='-25% objectif')
+
+
     plt.scatter(len(df['c']) - 1, df['c'].values[-1], color='blue', label='liveprice')
     plt.scatter(len(df['c']) - 2, df['c'].values[-2], color='orange', label='cloture')
     plt.scatter(local_max[-3], A, color='blue')
@@ -631,7 +636,7 @@ def Finder_IETE(time1, time_name1, start1):
                                             df_IETE = pd.concat([data_A_, data_B_, data_C_, data_D_, data_E_, data_F_, data_G_], axis=1)
                                             # ----- enregister des données inutiles -----#
                 if nom_place != 'vide':
-                    courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice, nom_place)
+                    courbe(tiker_live, time1, time_name1, mirande3, local_min, local_max, A, B, C, D, E, F, G, df, place_liveprice, nom_place, moyenne_tete)
                 print('----------------------------------------------------------------------', flush=True)
                 time.sleep(0.5)
 
