@@ -104,14 +104,6 @@ def save_figure(event):
     #button1.color = '#94ffa4'
     #button1.hovercolor = '#94ffa4'
 
-
-def purchase(event):
-    global argument2
-    global argument3
-    global tiker_live
-    global time2
-    global time_name2
-    print("Achat en Cours.")
 # ----- initialisation des fonctions lies au boutons -----#
 
 
@@ -213,8 +205,8 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
         # Création du bouton pour acheter
         button_ax2 = plt.axes([0.9 - button_width, 0.001, button_width, button_height], facecolor='none')
         button2 = plt.Button(button_ax2, 'Acheter', color='white', hovercolor='lightgray')
-        target1 = 545455
-        target2 = 1
+        target1 = J[1] + ((moyenne_tete*30) / 100)
+        target2 = J[1] - ((moyenne_tete*5) / 100)
         button2.on_clicked(lambda event: achat(ticker, target1, target2))
         plt.show()
 
@@ -639,8 +631,8 @@ def Finder_IETE(time1, time_name1, start1):
 
                         # ----- regarde si la target a deja ete toucher en volatilité avant affichage  -----#
                         dejatoucher = False
-                        for i in range(int(round(J[0])), place_liveprice):
-                            if df['h'].iloc[i] <= J[1] + (moyenne_tete) / 2 and dejatoucher == False:
+                        for i in range(int(df['c'].index[-2]), place_liveprice):
+                            if df['h'].iloc[i] >= J[1] + (moyenne_tete*30) / 100 and dejatoucher == False:
                                 dejatoucher = True
                                 dejatoucher2 = 'OUI'
                         if dejatoucher == False:

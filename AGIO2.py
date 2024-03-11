@@ -78,7 +78,9 @@ start_5m = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
 start_15m = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
 start_30m = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
 start_1h = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
-start_6h = str(pd.Timestamp.today() + pd.DateOffset(-20))[0:10]
+start_6h = str(pd.Timestamp.today() + pd.DateOffset(-25))[0:10]
+start_12h = str(pd.Timestamp.today() + pd.DateOffset(-35))[0:10]
+start_18h = str(pd.Timestamp.today() + pd.DateOffset(-50))[0:10]
 start_1d = str(pd.Timestamp.today() + pd.DateOffset(-50))[0:10]
 start_1week = str(pd.Timestamp.today() + pd.DateOffset(-120))[0:10]
 start_1month = str(pd.Timestamp.today() + pd.DateOffset(-240))[0:10]
@@ -104,14 +106,6 @@ def save_figure(event):
     #button1.color = '#94ffa4'
     #button1.hovercolor = '#94ffa4'
 
-
-def purchase(event):
-    global argument2
-    global argument3
-    global tiker_live
-    global time2
-    global time_name2
-    print("Achat en Cours.")
 # ----- initialisation des fonctions lies au boutons -----#
 
 
@@ -213,8 +207,8 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
         # Création du bouton pour acheter
         button_ax2 = plt.axes([0.9 - button_width, 0.001, button_width, button_height], facecolor='none')
         button2 = plt.Button(button_ax2, 'Acheter', color='white', hovercolor='lightgray')
-        target1 = 545455
-        target2 = 1
+        target1 = J[1] + ((moyenne_tete*30) / 100)
+        target2 = J[1] - ((moyenne_tete*5) / 100)
         button2.on_clicked(lambda event: achat(ticker, target1, target2))
         plt.show()
 
