@@ -568,7 +568,7 @@ def Finder_IETE(time1, time_name1, start1):
 
                         # ----- condition pour que la tete fasse au minimum 2.8% -----#
                         plus_grand = round((J[1] + ((moyenne_tete*30) / 100)), 5)
-                        plus_petit = J[1]
+                        plus_petit = df['c'].values[-2]
                         pourcent_chercher = ((plus_grand - plus_petit) / plus_petit) * 100
                         pourcent_chercher = round(pourcent_chercher, 2)
 
@@ -652,10 +652,6 @@ def Finder_IETE(time1, time_name1, start1):
                         # playsound('note.wav')
                         moins50p = G - (moyenne_tete) / 2
                         plus_grand = round((J[1] + ((moyenne_tete*30) / 100)), 5)
-                        #plus_petit = round(G, 5)
-                        plus_petit = J[1]
-                        pourcent_chercher = ((plus_grand - plus_petit) / plus_petit) * 100
-                        pourcent_chercher = round(pourcent_chercher, 2)
 
                         pourcent_chercher2 = ((plus_grand - round(G, 5)) / round(G, 5)) * 100
                         pourcent_chercher2 = round(pourcent_chercher2, 2)
