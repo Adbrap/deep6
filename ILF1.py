@@ -79,7 +79,7 @@ end = str(pd.Timestamp.today() + pd.DateOffset(5))[0:10]
 # ----- initialisation de l'API key et ticker -----#
 #api_key = '1KsqKOh1pTAJyWZx6Qm9pvnaNcpKVh_8'
 api_key = 'q5li8Y5ldvlF7eP8YI7XdMWbyOA3scWJ'
-ticker = 'AAPL'
+ticker = 'ILF'
 tiker_live = ticker
 
 argument2 = 0
