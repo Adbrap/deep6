@@ -74,11 +74,21 @@ lb = Fore.LIGHTBLUE_EX
 date = datetime.datetime.now()
 my_lock = threading.RLock()
 end = str(pd.Timestamp.today() + pd.DateOffset(5))[0:10]
+start_5m = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
+start_15m = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
+start_30m = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
+start_1h = str(pd.Timestamp.today() + pd.DateOffset(-15))[0:10]
+start_6h = str(pd.Timestamp.today() + pd.DateOffset(-25))[0:10]
+start_12h = str(pd.Timestamp.today() + pd.DateOffset(-35))[0:10]
+start_18h = str(pd.Timestamp.today() + pd.DateOffset(-50))[0:10]
+start_1d = str(pd.Timestamp.today() + pd.DateOffset(-50))[0:10]
+start_1week = str(pd.Timestamp.today() + pd.DateOffset(-120))[0:10]
+start_1month = str(pd.Timestamp.today() + pd.DateOffset(-240))[0:10]
 # ----- initialisation des temps de recherches -----#
 
 # ----- initialisation de l'API key et ticker -----#
-#api_key = '1KsqKOh1pTAJyWZx6Qm9pvnaNcpKVh_8'
-api_key = 'q5li8Y5ldvlF7eP8YI7XdMWbyOA3scWJ'
+api_key = '1KsqKOh1pTAJyWZx6Qm9pvnaNcpKVh_8'
+#api_key = 'q5li8Y5ldvlF7eP8YI7XdMWbyOA3scWJ'
 ticker = 'BSCS'
 tiker_live = ticker
 
@@ -99,7 +109,7 @@ def save_figure(event):
 # ----- initialisation des fonctions lies au boutons -----#
 
 
-def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pourcent_perdu,note,debugage,dejatoucher2,mirande3,mirande2,J,I,moyenne_tete,moins50p,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice):
+def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pourcent_perdu,note,debugage,dejatoucher2,mirande3,mirande2,J,I,moyenne_tete,moins50p,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice,tout_savoir):
     global argument2
     global argument3
     # ----- creer la figure et l'affichage MATPLOTLIB -----#
@@ -123,7 +133,7 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
             fig.patch.set_alpha(0.3)
         plt.plot([], [], ' ')
         plt.title(
-            f'IETE : {tiker_live} | {time1} {time_name1} | +{pourcent_chercher}% ESPERE | +{pourcent_chercher2}% REEL | -{pourcent_perdu}% REEL | {note}/10 | {debugage} | {dejatoucher2}',
+            f'IETE : {tiker_live} | {time1} {time_name1} | +{pourcent_chercher}% ESPERE | +{pourcent_chercher2}% REEL | -{pourcent_perdu}% REEL | {note}/10 | {tout_savoir} | {dejatoucher2}',
             fontweight="bold", color='black')
         mirande3['c'].plot(color=['blue'], label='Clotures')
         # df['sma_20'].plot(label='Ema 20', linestyle='-', linewidth=1.2, color='green')
@@ -140,7 +150,7 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
         plt.axhline(y=J[1] + (moyenne_tete) / 4, linestyle='--', alpha=0.3, color='black',
                     label='25% objectif')
         plt.axhline(y=J[1] - ((moyenne_tete*5) / 100), xmin=0.8, xmax=1, linestyle='-', alpha=0.8, color='red', linewidth=2, label='-50% objectif')
-        plt.axhline(y=J[1] + ((moyenne_tete*30) / 100), xmin=0.8, xmax=1, linestyle='-', alpha=0.8, color='green', linewidth=2, label='-50% objectif')
+        plt.axhline(y=J[1] + ((moyenne_tete*60) / 100), xmin=0.8, xmax=1, linestyle='-', alpha=0.8, color='green', linewidth=2, label='-50% objectif')
         plt.grid(True, which='major', color='#666666', linestyle='-', alpha=0.1)
         taille_diviser = (local_max[-1] - local_max[-2]) / (local_min[-2] - local_max[-2])
         # point_max = J[0]+((J[0] - I[0])/taille_diviser)
@@ -152,7 +162,7 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
                  wrap=True)
         plt.text(J[0], J[1] + (moyenne_tete) / 2, f"{round((J[1] + (moyenne_tete) / 2), 5)}",
                  ha='left', style='normal', size=10.5, color='red', wrap=True)
-        plt.text(J[0], J[1] + ((moyenne_tete*30) / 100), f"{round(J[1] + ((moyenne_tete*30) / 100), 5)}", ha='left', style='normal', size=10.5,
+        plt.text(J[0], J[1] + ((moyenne_tete*60) / 100), f"{round(J[1] + ((moyenne_tete*60) / 100), 5)}", ha='left', style='normal', size=10.5,
                  color='red', wrap=True)
         plt.text(J[0], J[1] - ((moyenne_tete*5) / 100), f"{round(J[1] - ((moyenne_tete*5) / 100), 5)}", ha='left', style='normal', size=10.5,
                  color='red', wrap=True)
@@ -185,7 +195,7 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
         #plt.scatter(x=highs.index, y=highs['c'], alpha=0.5)
         #plt.scatter(x=lows.index, y=lows['c'], alpha=0.5)
         argument2 = round((J[1] + (moyenne_tete) / 2), 5)
-        argument3 = round(J[1] + ((moyenne_tete*30) / 100), 5)
+        argument3 = round(J[1] + ((moyenne_tete*60) / 100), 5)
         # Paramètres des boutons
         button_width = 0.2
         button_height = 0.075
@@ -197,7 +207,7 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
         # Création du bouton pour acheter
         button_ax2 = plt.axes([0.9 - button_width, 0.001, button_width, button_height], facecolor='none')
         button2 = plt.Button(button_ax2, 'Acheter', color='white', hovercolor='lightgray')
-        target1 = J[1] + ((moyenne_tete*30) / 100)
+        target1 = J[1] + ((moyenne_tete*60) / 100)
         target2 = J[1] - ((moyenne_tete*5) / 100)
         button2.on_clicked(lambda event: achat(ticker, target1, target2))
         plt.show()
@@ -263,7 +273,7 @@ def Finder_IETE(time1, time_name1, start1):
     time2 = time1
     time_name2 = time_name1
     # while True:
-    start = str(pd.Timestamp.today() + pd.DateOffset(-start1))[0:10]
+
     # ----- Appel des données Polygon.io OHLC et creation du DF -----#
     passed1 = False
     with my_lock:
@@ -274,7 +284,7 @@ def Finder_IETE(time1, time_name1, start1):
             df_livePrice = pd.DataFrame(data)
 
             # api_url_OHLC = f'http://api.polygon.io/v2/aggs/ticker/{ticker}/range/15/minute/2022-07-01/2022-07-15?adjusted=true&sort=asc&limit=30000&apiKey={api_key}'
-            api_url_OHLC = f'http://api.polygon.io/v2/aggs/ticker/{ticker}/range/{time1}/{time_name1}/{start}/{end}?adjusted=true&limit=50000&apiKey={api_key}'
+            api_url_OHLC = f'http://api.polygon.io/v2/aggs/ticker/{ticker}/range/{time1}/{time_name1}/{start1}/{end}?adjusted=true&limit=50000&apiKey={api_key}'
             #api_url_OHLC = 'http://ab-trading.fr/data2.json'
 
             data = requests.get(api_url_OHLC).json()
@@ -557,10 +567,16 @@ def Finder_IETE(time1, time_name1, start1):
                         # ----- creation de la fonction Moyenne mobile  -----#
 
                         # ----- condition pour que la tete fasse au minimum 2.8% -----#
-                        plus_grand = round((J[1] + ((moyenne_tete*30) / 100)), 5)
+                        plus_grand = round((J[1] + ((moyenne_tete*60) / 100)), 5)
                         plus_petit = df['c'].values[-2]
                         pourcent_chercher = ((plus_grand - plus_petit) / plus_petit) * 100
                         pourcent_chercher = round(pourcent_chercher, 2)
+
+
+                        prix_chercher = df['c'].values[-2] + (df['c'].values[-2] * 0.015)
+                        difference_chercher = prix_chercher - df['c'].values[-2]
+                        tout_savoir = (difference_chercher*100)/moyenne_tete
+
 
                         mini_pourcent = False
                         if pourcent_chercher >= 1.5:
@@ -573,7 +589,7 @@ def Finder_IETE(time1, time_name1, start1):
                     if I[1] > B and J[
                         1] > F and moyenne_epaule1 <= moyenne_tete / 2 and moyenne_epaule2 <= moyenne_tete / 2 and moyenne_epaule1 >= moyenne_tete / 4 and moyenne_epaule2 >= moyenne_tete / 4 and accept == True and \
                             df['c'].values[-2] <= J[1] + (moyenne_tete) / 4 and df['c'].values[-2] >= J[1] and \
-                            df['c'].index[-2] != local_min[-1] and mini_pourcent == True and G >= 1:
+                            df['c'].index[-2] != local_min[-1] and G >= 1:
                         # ----- condition pour filtrer iete  -----#
 
                         # ----- systeme de notation des iete en fonction de la beaute et de la perfection de realisation  -----#
@@ -630,8 +646,8 @@ def Finder_IETE(time1, time_name1, start1):
 
                         # ----- regarde si la target a deja ete toucher en volatilité avant affichage  -----#
                         dejatoucher = False
-                        for i in range(int(df['c'].index[-2]), place_liveprice):
-                            if df['h'].iloc[i] >= J[1] + (moyenne_tete*30) / 100 and dejatoucher == False:
+                        for i in range(int(round(J[0])), place_liveprice):
+                            if df['h'].iloc[i] <= J[1] + (moyenne_tete) / 2 and dejatoucher == False:
                                 dejatoucher = True
                                 dejatoucher2 = 'OUI'
                         if dejatoucher == False:
@@ -641,7 +657,7 @@ def Finder_IETE(time1, time_name1, start1):
                         # ----- initialisation des données d'aide -----#
                         # playsound('note.wav')
                         moins50p = G - (moyenne_tete) / 2
-                        plus_grand = round((J[1] + ((moyenne_tete*30) / 100)), 5)
+                        plus_grand = round((J[1] + ((moyenne_tete*60) / 100)), 5)
 
                         pourcent_chercher2 = ((plus_grand - round(G, 5)) / round(G, 5)) * 100
                         pourcent_chercher2 = round(pourcent_chercher2, 2)
@@ -653,7 +669,7 @@ def Finder_IETE(time1, time_name1, start1):
 
                         # ----- initialisation des données d'aide -----#
 
-                        thread = Process(target=courbe, args=(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pourcent_perdu,note,debugage,dejatoucher2,mirande3,mirande2,J,I,moyenne_tete,moins50p,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice))
+                        thread = Process(target=courbe, args=(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pourcent_perdu,note,debugage,dejatoucher2,mirande3,mirande2,J,I,moyenne_tete,moins50p,local_min,local_max,A,B,C,D,E,F,G,df,place_liveprice,tout_savoir))
                         thread.start()
 
                         # ----- determiner le temps d'attente avant de reafficher une figure deja sortie (mais obsolette) -----#
@@ -702,79 +718,72 @@ jour = "day"
 # ----- traduction francais anglais pour appel polygon -----#
 
 # ----- enssembles des Process à lancer en meme temps -----#
-for i in range (10,0,-1):
-    th1 = Process(target=Finder_IETE, args=(15, minute, i))
-    th2 = Process(target=Finder_IETE, args=(15, minute, i))
-    th3 = Process(target=Finder_IETE, args=(25, minute, i))
-    th4 = Process(target=Finder_IETE, args=(30, minute, i))
-    th5 = Process(target=Finder_IETE, args=(35, minute, i))
-    th6 = Process(target=Finder_IETE, args=(45, minute, i))
-    th7 = Process(target=Finder_IETE, args=(1, heure, i))
-    th8 = Process(target=Finder_IETE, args=(2, heure, i))
-    th9 = Process(target=Finder_IETE, args=(4, heure, i))
-    th10 = Process(target=Finder_IETE, args=(40, minute, i))
-    th11 = Process(target=Finder_IETE, args=(50, minute, i))
-    th12 = Process(target=Finder_IETE, args=(55, minute, i))
-    th13 = Process(target=Finder_IETE, args=(30, minute, i))
-    th14 = Process(target=Finder_IETE, args=(75, minute, i))
-    th15 = Process(target=Finder_IETE, args=(90, minute, i))
-    th16 = Process(target=Finder_IETE, args=(105, minute, i))  # ici nouveau
-    th17 = Process(target=Finder_IETE, args=(135, minute, i))
-    if i >= 5:
-        th18 = Process(target=Finder_IETE, args=(150, minute, i))
-        th19 = Process(target=Finder_IETE, args=(165, minute, i))
-        th20 = Process(target=Finder_IETE, args=(195, minute, i))
-        th21 = Process(target=Finder_IETE, args=(210, minute, i))
-        th22 = Process(target=Finder_IETE, args=(225, minute, i))
-        th23 = Process(target=Finder_IETE, args=(255, minute, i))
+th1 = Process(target=Finder_IETE, args=(3, heure, start_1h))
+th2 = Process(target=Finder_IETE, args=(5, heure, start_1h))
+th3 = Process(target=Finder_IETE, args=(6, heure, start_6h))
+th4 = Process(target=Finder_IETE, args=(7, heure, start_6h))
+th5 = Process(target=Finder_IETE, args=(8, heure, start_6h))
+th6 = Process(target=Finder_IETE, args=(9, heure, start_6h))
+th7 = Process(target=Finder_IETE, args=(10, heure, start_6h))
+th8 = Process(target=Finder_IETE, args=(11, heure, start_6h))
+th9 = Process(target=Finder_IETE, args=(12, heure, start_12h))
+th10 = Process(target=Finder_IETE, args=(13, heure, start_12h))
+th11 = Process(target=Finder_IETE, args=(14, heure, start_12h))
+th12 = Process(target=Finder_IETE, args=(15, heure, start_12h))
+th13 = Process(target=Finder_IETE, args=(16, heure, start_12h))
+th14 = Process(target=Finder_IETE, args=(17, heure, start_12h))
+th15 = Process(target=Finder_IETE, args=(18, heure, start_12h))
+th16 = Process(target=Finder_IETE, args=(19, heure, start_18h))  # ici nouveau
+th17 = Process(target=Finder_IETE, args=(20, heure, start_18h))
+th18 = Process(target=Finder_IETE, args=(21, heure, start_18h))
+th19 = Process(target=Finder_IETE, args=(22, heure, start_18h))
+th20 = Process(target=Finder_IETE, args=(23, heure, start_18h))
+th21 = Process(target=Finder_IETE, args=(24, heure, start_18h))
+th22 = Process(target=Finder_IETE, args=(1, jour, start_1d))
 
-    th1.start()
-    th2.start()
-    th3.start()
-    th4.start()
-    th5.start()
-    th6.start()
-    th7.start()
-    th8.start()
-    th9.start()
-    th10.start()
-    th11.start()
-    th12.start()
-    th13.start()
-    th14.start()
-    th15.start()
-    th16.start()  # ici nouveau
-    th17.start()
-    if i >= 5:
-        th18.start()
-        th19.start()
-        th20.start()
-        th21.start()
-        th22.start()
-        th23.start()
+th1.start()
+th2.start()
+th3.start()
+th4.start()
+th5.start()
+th6.start()
+th7.start()
+th8.start()
+th9.start()
+th10.start()
+th11.start()
+th12.start()
+th13.start()
+th14.start()
+th15.start()
+th16.start()  # ici nouveau
+th17.start()
+th18.start()
+th19.start()
+th20.start()
+th21.start()
+th22.start()
 
-    th1.join()
-    th2.join()
-    th3.join()
-    th4.join()
-    th5.join()
-    th6.join()
-    th7.join()
-    th8.join()
-    th9.join()
-    th10.join()
-    th11.join()
-    th12.join()
-    th13.join()
-    th14.join()
-    th15.join()
-    th16.join()  # ici nouveau
-    th17.join()
-    if i >= 5:
-        th18.join()
-        th19.join()
-        th20.join()
-        th21.join()
-        th22.join()
-        th23.join()
+th1.join()
+th2.join()
+th3.join()
+th4.join()
+th5.join()
+th6.join()
+th7.join()
+th8.join()
+th9.join()
+th10.join()
+th11.join()
+th12.join()
+th13.join()
+th14.join()
+th15.join()
+th16.join()  # ici nouveau
+th17.join()
+th18.join()
+th19.join()
+th20.join()
+th21.join()
+th22.join()
 
